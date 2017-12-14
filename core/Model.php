@@ -24,8 +24,8 @@ class Model{
     {
         $host = "localhost";
         $user = "root";
-        $password = "toor";
-        $database = "kyf";
+        $password = "12345";
+        $database = "kyfdb";
         $charset = "utf8";
         $opt = [PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC];
 

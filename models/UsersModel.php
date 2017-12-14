@@ -8,7 +8,7 @@ class UsersModel extends Model
     public function getUsers()
     {
         //Consulta SQL
-        $query = "select * from kyf.persona";
+        $query = "select * from persona";
 
         //Retornar un array
         $result = $this -> mariadb -> query($query);

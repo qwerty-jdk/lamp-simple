@@ -9,7 +9,6 @@
       <extension name="ZendCache" enabled="false" />
       <extension name="ZendDebugger" enabled="false" />
       <extension name="ZendUtils" enabled="false" />
-      <extension name="ampq" enabled="false" />
       <extension name="apc" enabled="false" />
       <extension name="apcu" enabled="false" />
       <extension name="bz2" enabled="false" />

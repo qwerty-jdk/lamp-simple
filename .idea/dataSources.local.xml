@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MariaDB" uuid="6ba0ec18-660f-4bb2-912e-8b73bafecd1b">
+      <database-info product="MySQL" version="10.2.11-MariaDB" jdbc-version="4.2" driver-name="MariaDB connector/J" driver-version="2.1.2">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <introspection-schemas>*:kyfdb</introspection-schemas>
+    </data-source>
+  </component>
+</project>

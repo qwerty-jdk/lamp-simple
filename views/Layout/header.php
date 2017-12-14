@@ -22,10 +22,11 @@
                         <small class="iconav-nav-label d-md-none">Turnos</small>
                     </a>
                 </li>
+                <!-- ##################################################################################### -->
                 <li class="nav-item">
-                    <a class="nav-link" href="#" title="Dependencias" data-toggle="tooltip" data-placement="right" data-container="body">
-                        <span class="icon icon-users"></span>
-                        <small class="iconav-nav-label d-md-none">Dependencias</small>
+                    <a class="nav-link" href="#" title="Dependencias KYF" data-toggle="tooltip" data-placement="right" data-container="body">
+                        <span class="icon icon-location-pin"></span>
+                        <small class="iconav-nav-label d-md-none">Sedes</small>
                     </a>
                 </li>
                 <li class="nav-item">
@@ -36,15 +37,16 @@
                 </li>
                 <!-- ##################################################################################### -->
                 <li class="nav-item">
-                    <a class="nav-link" href="#" title="Organizaciones" data-toggle="tooltip" data-placement="right" data-container="body">
+                    <a class="nav-link" href="#" title="Clientes" data-toggle="tooltip" data-placement="right" data-container="body">
                         <span class="icon icon-briefcase"></span>
                         <small class="iconav-nav-label d-md-none">Organizaciones</small>
                     </a>
                 </li>
+                <!-- ##################################################################################### -->
                 <li class="nav-item">
-                    <a class="nav-link" href="#" title="Sedes" data-toggle="tooltip" data-placement="right" data-container="body">
-                        <span class="icon icon-location-pin"></span>
-                        <small class="iconav-nav-label d-md-none">Sedes</small>
+                    <a class="nav-link" href="#" title="Sedes de Clientes" data-toggle="tooltip" data-placement="right" data-container="body">
+                        <span class="icon icon-users"></span>
+                        <small class="iconav-nav-label d-md-none">Dependencias</small>
                     </a>
                 </li>
                 <!-- ##################################################################################### -->

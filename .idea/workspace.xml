@@ -2,26 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6fe74251-9c77-4b6e-8508-7a969ff7fe02" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/php.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/TipoCompromiso.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/TipoTurno.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/Turno.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/ModelCRUD.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/TipoCompromisoModel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/TipoTurnoModel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/TurnoModel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/TipoCompromiso/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/TipoTurno/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/Turno/index.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/44ea2ccf-fd2f-4489-93bf-6ed9f0e7d86c.xml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/Layout/personas.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/clientes.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/compromiso.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/dependenciasKyf.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/empresa.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/informes.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/sedesClientes.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/sertificados.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/tipoCompromiso.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/tipoTurno.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/turnos.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/webapp-php-mvc.iml" afterPath="$PROJECT_DIR$/.idea/webapp-php-mvc.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/Users.php" afterPath="$PROJECT_DIR$/controllers/Users.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/Layout.php" afterPath="$PROJECT_DIR$/core/Layout.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/LoadModel.php" afterPath="$PROJECT_DIR$/core/LoadModel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/phpRuntime.xml" afterPath="$PROJECT_DIR$/.idea/phpRuntime.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/Model.php" afterPath="$PROJECT_DIR$/core/Model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/UsersModel.php" afterPath="$PROJECT_DIR$/models/UsersModel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/Layout/header.php" afterPath="$PROJECT_DIR$/views/Layout/header.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -80,7 +77,7 @@
       <path value="C:\xampp\php\PEAR" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -101,6 +98,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -144,8 +143,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -189,6 +186,7 @@
       <workItem from="1513181804856" duration="1209000" />
       <workItem from="1513193755312" duration="627000" />
       <workItem from="1513203186050" duration="14529000" />
+      <workItem from="1513261172489" duration="297000" />
     </task>
     <servers />
   </component>
@@ -207,24 +205,24 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18011000" />
+    <option name="totallyTimeSpent" value="18308000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16792738" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17019667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18381241" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -270,7 +268,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
           <caret line="938" column="29" lean-forward="true" selection-start-line="938" selection-start-column="29" selection-end-line="938" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -294,9 +291,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="19" selection-end-column="37" />
-          <folding>
-            <marker date="1513207688950" expanded="true" signature="260:281" ph="select * fro... persona" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -304,7 +299,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -330,7 +324,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -352,32 +345,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/Model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="31" column="22" lean-forward="false" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/toolkit-inverse.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="0" column="23925" lean-forward="false" selection-start-line="0" selection-start-column="23925" selection-end-line="0" selection-end-column="23925" />
-          <folding>
-            <element signature="e#48015#48215#2" expanded="false" />
-            <element signature="e#48337#48486#2" expanded="false" />
-            <element signature="e#48632#48778#2" expanded="false" />
-            <element signature="e#49284#49447#1" expanded="false" />
-            <element signature="e#59273#59516#2" expanded="false" />
-            <element signature="e#60242#60491#2" expanded="false" />
-            <element signature="e#84473#84660#2" expanded="false" />
-            <element signature="e#84706#84895#2" expanded="false" />
-            <element signature="e#179487#179722#2" expanded="false" />
-            <element signature="e#179797#180032#2" expanded="false" />
-            <element signature="e#180147#180734#2" expanded="false" />
-            <element signature="e#180833#181324#2" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -475,6 +446,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
           <folding />
         </state>
       </provider>

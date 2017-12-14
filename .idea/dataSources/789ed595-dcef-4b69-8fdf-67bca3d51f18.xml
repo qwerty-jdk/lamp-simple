@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MariaDB">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="information_schema">
+      <Current>1</Current>
+    </schema>
+    <schema id="3" parent="1" name="kyfdb">
+      <Visible>1</Visible>
+    </schema>
+    <schema id="4" parent="1" name="mysql"/>
+    <schema id="5" parent="1" name="performance_schema"/>
+    <schema id="6" parent="1" name="test"/>
+    <table id="7" parent="3" name="compromiso"/>
+    <table id="8" parent="3" name="direccion"/>
+    <table id="9" parent="3" name="empresa"/>
+    <table id="10" parent="3" name="persona"/>
+    <table id="11" parent="3" name="sede"/>
+    <table id="12" parent="3" name="sede_empresa"/>
+    <table id="13" parent="3" name="telefono"/>
+    <table id="14" parent="3" name="tipo_compromiso"/>
+    <table id="15" parent="3" name="tipo_turno"/>
+    <table id="16" parent="3" name="turno"/>
+    <column id="17" parent="7" name="RUT_PERSONA">
+      <Position>1</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="18" parent="7" name="NOMBRE">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="19" parent="7" name="CODIGO_TIPO_COMPROMISO">
+      <Position>3</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="20" parent="7" name="FECHA_INICIO">
+      <Position>4</Position>
+      <DataType>date|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="21" parent="7" name="FECHA_FIN">
+      <Position>5</Position>
+      <DataType>date|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="22" parent="7" name="CODIGO_TIPO_COMPROMISO">
+      <ColNames>CODIGO_TIPO_COMPROMISO</ColNames>
+    </index>
+    <key id="23" parent="7" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>RUT_PERSONA
+NOMBRE</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="24" parent="7" name="compromiso_ibfk_1">
+      <ColNames>RUT_PERSONA</ColNames>
+      <RefSchemaName>kyfdb</RefSchemaName>
+      <RefTableName>persona</RefTableName>
+      <RefColNames>RUT</RefColNames>
+    </foreign-key>
+    <foreign-key id="25" parent="7" name="compromiso_ibfk_2">
+      <ColNames>CODIGO_TIPO_COMPROMISO</ColNames>
+      <RefSchemaName>kyfdb</RefSchemaName>
+      <RefTableName>tipo_compromiso</RefTableName>
+      <RefColNames>CODIGO</RefColNames>
+    </foreign-key>
+    <column id="26" parent="8" name="RUT_PERSONA">
+      <Position>1</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="27" parent="8" name="CALLE">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="28" parent="8" name="NUMERO">
+      <Position>3</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="29" parent="8" name="COMUNA">
+      <Position>4</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="30" parent="8" name="CIUDAD">
+      <Position>5</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="31" parent="8" name="RUT_PERSONA">
+      <ColNames>RUT_PERSONA</ColNames>
+    </index>
+    <foreign-key id="32" parent="8" name="direccion_ibfk_1">
+      <ColNames>RUT_PERSONA</ColNames>
+      <RefSchemaName>kyfdb</RefSchemaName>
+      <RefTableName>persona</RefTableName>
+      <RefColNames>RUT</RefColNames>
+    </foreign-key>
+    <column id="33" parent="9" name="RUT">
+      <Position>1</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="34" parent="9" name="NOMBRE">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="35" parent="9" name="RAZON_SOCIAL">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="36" parent="9" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>RUT</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="37" parent="10" name="RUT">
+      <Position>1</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="38" parent="10" name="PRIMER_NOMBRE">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="39" parent="10" name="SEGUNDO_NOMBRE">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="40" parent="10" name="PRIMER_APELLIDO">
+      <Position>4</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="41" parent="10" name="SEGUNDO_APELLIDO">
+      <Position>5</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="42" parent="10" name="SEXO">
+      <Position>6</Position>
+      <DataType>char(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="43" parent="10" name="FECHA_NACIMIENTO">
+      <Position>7</Position>
+      <DataType>date|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="44" parent="10" name="CODIGO_SEDE">
+      <Position>8</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="45" parent="10" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>RUT</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="46" parent="11" name="CODIGO">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="47" parent="11" name="NOMBRE">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="48" parent="11" name="TELEFONO">
+      <Position>3</Position>
+      <DataType>varchar(12)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="49" parent="11" name="CALLE">
+      <Position>4</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="50" parent="11" name="NUMERO">
+      <Position>5</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="51" parent="11" name="COMUNA">
+      <Position>6</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="52" parent="11" name="CIUDAD">
+      <Position>7</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="53" parent="11" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>CODIGO</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="54" parent="12" name="RUT_EMPRESA">
+      <Position>1</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="55" parent="12" name="NOMBRE">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="56" parent="12" name="TELEFONO">
+      <Position>3</Position>
+      <DataType>varchar(12)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="57" parent="12" name="CALLE">
+      <Position>4</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="58" parent="12" name="NUMERO">
+      <Position>5</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="59" parent="12" name="COMUNA">
+      <Position>6</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="60" parent="12" name="CIUDAD">
+      <Position>7</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="61" parent="12" name="CODIGO_TURNO">
+      <Position>8</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="62" parent="12" name="CODIGO_TURNO">
+      <ColNames>CODIGO_TURNO</ColNames>
+    </index>
+    <key id="63" parent="12" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>RUT_EMPRESA
+NOMBRE</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="64" parent="12" name="sede_empresa_ibfk_1">
+      <ColNames>RUT_EMPRESA</ColNames>
+      <RefSchemaName>kyfdb</RefSchemaName>
+      <RefTableName>empresa</RefTableName>
+      <RefColNames>RUT</RefColNames>
+    </foreign-key>
+    <foreign-key id="65" parent="12" name="sede_empresa_ibfk_2">
+      <ColNames>CODIGO_TURNO</ColNames>
+      <RefSchemaName>kyfdb</RefSchemaName>
+      <RefTableName>turno</RefTableName>
+      <RefColNames>CODIGO</RefColNames>
+    </foreign-key>
+    <column id="66" parent="13" name="RUT_PERSONA">
+      <Position>1</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="67" parent="13" name="NUMERO">
+      <Position>2</Position>
+      <DataType>varchar(12)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="68" parent="13" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>RUT_PERSONA
+NUMERO</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="69" parent="13" name="telefono_ibfk_1">
+      <ColNames>RUT_PERSONA</ColNames>
+      <RefSchemaName>kyfdb</RefSchemaName>
+      <RefTableName>persona</RefTableName>
+      <RefColNames>RUT</RefColNames>
+    </foreign-key>
+    <column id="70" parent="14" name="CODIGO">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="71" parent="14" name="NOMBRE">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="72" parent="14" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>CODIGO</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="73" parent="15" name="CODIGO">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="74" parent="15" name="NOMBRE">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="75" parent="15" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>CODIGO</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="76" parent="16" name="CODIGO">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="77" parent="16" name="NOMBRE">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="78" parent="16" name="CODIGO_TIPO_TURNO">
+      <Position>3</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="79" parent="16" name="CODIGO_TIPO_TURNO">
+      <ColNames>CODIGO_TIPO_TURNO</ColNames>
+    </index>
+    <key id="80" parent="16" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>CODIGO</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="81" parent="16" name="turno_ibfk_1">
+      <ColNames>CODIGO_TIPO_TURNO</ColNames>
+      <RefSchemaName>kyfdb</RefSchemaName>
+      <RefTableName>tipo_turno</RefTableName>
+      <RefColNames>CODIGO</RefColNames>
+    </foreign-key>
+  </database-model>
+</dataSource>

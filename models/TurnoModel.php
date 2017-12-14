@@ -1,7 +1,12 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: Administrador
+ * Date: 13/12/2017
+ * Time: 21:00
+ */
 
-//Extiende del nucleo Model
-class UsersModel extends Model implements ModelCRUD {
+class TurnoModel extends Model implements ModelCRUD {
 
     public function ReadOne($data)
     {
@@ -11,7 +16,7 @@ class UsersModel extends Model implements ModelCRUD {
     public function ReadAll()
     {
         //Consulta SQL
-        $query = "select * from persona";
+        $query = "select * from turno";
 
         //Retornar un array
         $result = $this -> mariadb -> query($query);
@@ -34,5 +39,4 @@ class UsersModel extends Model implements ModelCRUD {
     {
         // TODO: Implement Delete() method.
     }
-
 }

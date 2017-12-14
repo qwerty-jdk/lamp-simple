@@ -8,6 +8,7 @@ require ("core/Layout.php");
 require ("core/Model.php");
 require ("core/LoadModel.php");
 require ("core/Functions.php");
+require ("core/ModelCRUD.php");
 
 //gunifiy.com/index.php?controller=CONTROLLER_NAME&action=METHOD_NAME
 

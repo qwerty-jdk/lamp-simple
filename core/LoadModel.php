@@ -7,8 +7,14 @@ class LoadModel
 
     function __construct($model)
     {
-        //incluir nombre del archivo
-        require ("./models/$model.php");
+        //Si el fichero de modelo existe
+        if(file_exists("./models/$model.php")){
+            //incluir nombre del archivo
+            require ("./models/$model.php");
+        }else {
+            //no existe
+            die("Model #$model# not found.");
+        }
     }
 
 }

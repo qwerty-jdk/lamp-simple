@@ -7,11 +7,11 @@ class Layout
     {
         require("Config.php");
 
-        //Agregar el encabezado y pie de mi pagina
         if (file_exists("./views/$view"))
         {
-            require ("./views/$view");
+            //Agregar el encabezado y pie de mi pagina
             if (file_exists("./views/Layout/$header"))require ("./views/Layout/".$header); else die("Header not found.");
+            require ("./views/$view");
             if (file_exists("./views/Layout/$footer"))require ("./views/Layout/".$footer); else die("Footer not found.");
         }
         else

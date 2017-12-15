@@ -3,17 +3,15 @@
 class Model{
 
     //Instancia de mi base de datos
-    public $mariadb = null;
+    protected $mariadb = null;
 
     function __construct()
     {
         //Intentar la conexión con la base de datos
-        try
-        {
+        try {
             $this -> mariadb = $this->getConnection();
         }
-        catch (PDOException $ex)
-        {
+        catch (PDOException $ex) {
             $e = $ex -> getMessage();
             die("Error: $e");
         }

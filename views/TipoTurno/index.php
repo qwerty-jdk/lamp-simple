@@ -1,6 +1,6 @@
 <div class="container">
-    <?php print_r($data); ?>
-    <form action="index.php?controller=TipoTurno&action=Save" method="post">
+    <?php print_r($data['tipoTurnos']); ?>
+    <form action="index.php?controller=TipoTurno&action=save" method="post">
         <div class="form-group">
             <input type="hidden" name="codigo">
             <label for="nombre">Nombre</label>

@@ -1,7 +1,6 @@
 <?php
-
 //Extiende del nucleo Model
-class UsersModel extends Model implements ModelCRUD {
+class UsersModel extends Model implements IDao {
 
     public function ReadOne($data)
     {
@@ -12,12 +11,15 @@ class UsersModel extends Model implements ModelCRUD {
     {
         //Consulta SQL
         $query = "select * from persona";
-
         //Retornar un array
         $result = $this -> mariadb -> query($query);
-
         //Retornando el valor
         return $result -> fetchAll();
+    }
+
+    public function getId()
+    {
+        // TODO: Implement getId() method.
     }
 
     public function Save($data)
@@ -25,12 +27,12 @@ class UsersModel extends Model implements ModelCRUD {
         // TODO: Implement Save() method.
     }
 
-    public function Update($id, $data)
+    public function Update($data)
     {
         // TODO: Implement Update() method.
     }
 
-    public function Delete($id)
+    public function Delete($data)
     {
         // TODO: Implement Delete() method.
     }

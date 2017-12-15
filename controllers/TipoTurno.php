@@ -8,36 +8,32 @@
 
 class TipoTurno extends Controller {
 
-    //Método que permite generar una instancia del modelo para ser reutilizada
-    private $Model;
-    private function getModel() {
-        if(!isset($this->Model)){
-            //Se realiza require() del modelo
-            $Loader = new LoadModel("TipoTurnoModel");
-            //Se crea una instancia del modelo
-            $this->Model = new TipoTurnoModel();
-        }
-        return $this->Model;
-    }
-
     function __construct() {
         parent::__construct();
     }
 
     public function index() {
+        $TipoTurnoLoader = new LoadModel("TipoTurnoModel");
+        $modelTipoTurno = new TipoTurnoModel();
         //Se llama al méthos que traerá todos los datos
-        $list = $this->getModel()->ReadAll();
+        $tipoTurnos = $modelTipoTurno->ReadAll();
         //Se instancia de la vista pasando como parámetro la lista al contenido
-        $View = new Layout("TipoTurno/index.php", compact("list"));
+        $View = new Layout("TipoTurno/index.php", compact("tipoTurnos"));
     }
 
     public function save(){
-        $model = $this->getModel();
-        $data = new Object($_POST['codigo'], $_POST['nombre']);
-        if($model->Save($data)){
-            $View = new Layout("TipoTurno/index.php", compact("data"));
-        }else {
-            die('No se pudo guardar el registro.');
+        try {
+            $TipoTurnoLoader = new LoadModel("TipoTurnoModel");
+            $modelTipoTurno = new TipoTurnoModel();
+            $data = new schemaTipoTurno($_POST['codigo'], $_POST['nombre']);
+            $saved = isset($data->Codigo) && $data->Codigo > 0 ? $modelTipoTurno->Update($data) : $modelTipoTurno->Save($data);
+            if ($saved == true) {
+                $tipoTurnos = $modelTipoTurno->ReadAll();
+                $View = new Layout("TipoTurno/index.php", compact("tipoTurnos"));
+            }else
+                die('No se pudo guardar el registro.');
+        }catch(Exception $e){
+            die('Error al guardar el registro: '.$e->getMessage());
         }
     }
 

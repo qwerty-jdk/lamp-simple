@@ -3,33 +3,37 @@
  * Created by PhpStorm.
  * User: Administrador
  * Date: 13/12/2017
- * Time: 21:05
+ * Time: 21:00
  */
 
-class schemaTipoCompromiso {
+class schemaEmpresa {
 
-    public $Codigo;
+    public $Rut;
     public $Nombre;
+    public $RazonSocial;
 
-    function __construct($codigo, $nombre){
-        $this->Codigo = $codigo;
+    function __construct($rut, $nombre, $razonSocial){
+        $this->Rut = $rut;
         $this->Nombre = $nombre;
+        $this->RazonSocial = $razonSocial;
     }
 
 }
 
-class TipoCompromisoModel extends Model implements IDao {
+class EmpresaModel extends Model implements IDao {
 
-    public function ReadOne($data){
-        $query = 'SELECT * FROM tipo_compromiso WHERE CODIGO = '.$data->Codigo;
+    public function ReadOne($data)
+    {
+        $query = 'SELECT * FROM empresa WHERE RUT = "'.$data->Rut.'"';
         $command = $this->mariadb->query($query);
         $result = $command->fetch();
         return $result;
     }
 
-    public function ReadAll(){
+    public function ReadAll()
+    {
         //Consulta SQL
-        $query = "SELECT * FROM tipo_compromiso";
+        $query = "SELECT * FROM empresa";
 
         //Retornar un array
         $result = $this -> mariadb -> query($query);
@@ -38,24 +42,20 @@ class TipoCompromisoModel extends Model implements IDao {
         return $result -> fetchAll(); // array
     }
 
-    public function getId(){
-        try{
-            $query = "SELECT MAX(CODIGO) AS id FROM tipo_compromiso";
-            $command = $this->mariadb->prepare($query);
-            $command->execute();
-            $id = $command->fetch()['id'];
-            return isset($id) && $id > 0 ? $id + 1 : 1;
-        }catch(Exception $e){ return 1; }
+    public function getId()
+    {
+
     }
 
     public function Save($data)
     {
         try{
             $data->Codigo = $this->getId();
-            $query = 'INSERT INTO tipo_compromiso (CODIGO, NOMBRE) VALUES (:CODIGO, :NOMBRE)';
+            $query = 'INSERT INTO empresa (RUT, NOMBRE, RAZON_SOCIAL) VALUES (:RUT, :NOMBRE, :RAZON_SOCIAL)';
             $command = $this->mariadb->prepare($query);
-            $command->bindParam(':CODIGO',$data->Codigo);
+            $command->bindParam(':RUT',$data->Rut);
             $command->bindParam(':NOMBRE',$data->Nombre);
+            $command->bindParam(':RAZON_SOCIAL',$data->RazonSocial);
             return $command->execute(); //bool
         }catch(Exception $e){
             die('Error al intentar guardar registro: '.$e->getMessage());
@@ -64,18 +64,19 @@ class TipoCompromisoModel extends Model implements IDao {
 
     public function Update($data)
     {
-        $query = 'UPDATE tipo_compromiso SET NOMBRE = :NOMBRE WHERE CODIGO = :CODIGO';
+        $query = 'UPDATE empresa SET NOMBRE = :NOMBRE, RAZON_SOCIAL = :RAZON_SOCIAL WHERE RUT = :RUT';
         $command = $this->mariadb->prepare($query);
-        $command->bindParam(':CODIGO',$data->Codigo);
+        $command->bindParam(':RUT',$data->Rut);
         $command->bindParam(':NOMBRE',$data->Nombre);
+        $command->bindParam(':CODIGO_TIPO_TURNO',$data->RazonSocial);
         return $command->execute(); //bool
     }
 
     public function Delete($data)
     {
-        $query = 'DELETE FROM tipo_compromiso WHERE CODIGO = :CODIGO';
+        $query = 'DELETE FROM empresa WHERE RUT = :RUT';
         $command = $this->mariadb->prepare($query);
-        $command->bindParam(':CODIGO',$data->Codigo);
+        $command->bindParam(':RUT',$data->Rut);
         return $command->execute(); //bool
     }
 

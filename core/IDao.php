@@ -6,12 +6,13 @@
  * Time: 20:13
  */
 
-interface ModelCRUD {
+interface IDao {
 
-    public function ReadOne();
+    public function ReadOne($data);
     public function ReadAll();
+    public function getId();
     public function Save($data);
-    public function Update();
-    public function Delete();
+    public function Update($data);
+    public function Delete($data);
 
 }

@@ -6,7 +6,7 @@
  * Time: 20:24
  */
 
-class Object {
+class schemaTipoTurno {
 
     public $Codigo;
     public $Nombre;
@@ -18,18 +18,16 @@ class Object {
 
 }
 
-class TipoTurnoModel extends Model implements ModelCRUD {
+class TipoTurnoModel extends Model implements IDao {
 
-    public function ReadOne()
-    {
-        $query = 'SELECT * FROM tipo_turno WHERE CODIGO = :CODIGO';
-        $command = $this->mariadb->prepare($query);
-        $command->bindParam(':CODIGO',$id);
-        return $command->fetch(); //mixed
+    public function ReadOne($data){
+        $query = 'SELECT * FROM tipo_turno WHERE CODIGO = '.$data->Codigo;
+        $command = $this->mariadb->query($query);
+        $result = $command->fetch();
+        return $result;
     }
 
-    public function ReadAll()
-    {
+    public function ReadAll(){
         //Consulta SQL
         $query = "SELECT * FROM tipo_turno";
 
@@ -40,7 +38,7 @@ class TipoTurnoModel extends Model implements ModelCRUD {
         return $result -> fetchAll(); // array
     }
 
-    private function getId(){
+    public function getId(){
         try{
             $query = "SELECT MAX(CODIGO) AS id FROM tipo_turno";
             $command = $this->mariadb->prepare($query);
@@ -64,20 +62,20 @@ class TipoTurnoModel extends Model implements ModelCRUD {
         }
     }
 
-    public function Update()
+    public function Update($data)
     {
         $query = 'UPDATE tipo_turno SET NOMBRE = :NOMBRE WHERE CODIGO = :CODIGO';
         $command = $this->mariadb->prepare($query);
-        $command->bindParam(':CODIGO',$id);
-        $command->bindParam(':NOMBRE',$data->nombre);
+        $command->bindParam(':CODIGO',$data->Codigo);
+        $command->bindParam(':NOMBRE',$data->Nombre);
         return $command->execute(); //bool
     }
 
-    public function Delete()
+    public function Delete($data)
     {
         $query = 'DELETE FROM tipo_turno WHERE CODIGO = :CODIGO';
         $command = $this->mariadb->prepare($query);
-        $command->bindParam(':CODIGO',$id);
+        $command->bindParam(':CODIGO',$data->Codigo);
         return $command->execute(); //bool
     }
 

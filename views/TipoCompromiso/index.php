@@ -1,8 +1,11 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Administrador
- * Date: 13/12/2017
- * Time: 21:03
- */
-echo url_base();
+<div class="container">
+    <?php print_r($data['tipoCompromisos']); ?>
+    <form action="index.php?controller=TipoCompromiso&action=save" method="post">
+        <div class="form-group">
+            <input type="hidden" name="codigo">
+            <label for="nombre">Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre..." />
+        </div>
+        <button type="submit" class="btn btn-default">Guardar</button>
+    </form>
+</div>

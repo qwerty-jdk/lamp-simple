@@ -8,27 +8,31 @@
 
 class TipoCompromiso extends Controller {
 
-    //Método que permite generar una instancia del modelo para ser reutilizada
-    private $Model;
-    private function getModel() {
-        if(!isset($this->Model)){
-            //Se realiza require() del modelo
-            $Loader = new LoadModel("TipoCompromisoModel");
-            //Se crea una instancia del modelo
-            $this->Model = new TipoCompromisoModel();
-        }
-        return $this->Model;
-    }
-
     function __construct() {
         parent::__construct();
     }
 
     public function index() {
-        //Se llama al méthos que traerá todos los datos
-        $list = $this->getModel()->ReadAll();
-        //Se instancia de la vista pasando como parámetro la lista al contenido
-        $View = new Layout("TipoCompromiso/index.php", compact("list"));
+        $TipoCompromisoLoader = new LoadModel("TipoCompromisoModel");
+        $modelTipoCompromiso = new TipoCompromisoModel();
+        $tipoCompromisos = $modelTipoCompromiso->ReadAll();
+        $View = new Layout("TipoCompromiso/index.php", compact("tipoCompromisos"));
+    }
+
+    public function save(){
+        try {
+            $TipoCompromisoLoader = new LoadModel("TipoCompromisoModel");
+            $modelTipoCompromiso = new TipoCompromisoModel();
+            $data = new schemaTipoCompromiso($_POST['codigo'], $_POST['nombre']);
+            $saved = isset($data->Codigo) && $data->Codigo > 0 ? $modelTipoCompromiso->Update($data) : $modelTipoCompromiso->Save($data);
+            if ($saved == true) {
+                $tipoCompromisos = $modelTipoCompromiso->ReadAll();
+                $View = new Layout("TipoCompromiso/index.php", compact("tipoCompromisos"));
+            }else
+                die('No se pudo guardar el registro.');
+        }catch(Exception $e){
+            die('Error al guardar el registro: '.$e->getMessage());
+        }
     }
 
 }

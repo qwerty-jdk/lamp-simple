@@ -19,16 +19,16 @@
                 <li class="nav-item">
                     <a class="nav-link" href="index.php?controller=Persona&action=index" title="Personas" data-toggle="tooltip" data-placement="right" data-container="body">
                         <span class="icon icon-user"></span>
-                        <small class="iconav-nav-label d-md-none">Turnos</small>
+                        <small class="iconav-nav-label d-md-none">Personas</small>
                     </a>
                 </li>
                 <!-- ##################################################################################### -->
-                <li class="nav-item">
+               <!-- <li class="nav-item">
                     <a class="nav-link" href="#" title="Dependencias KYF" data-toggle="tooltip" data-placement="right" data-container="body">
                         <span class="icon icon-location-pin"></span>
                         <small class="iconav-nav-label d-md-none">Sedes</small>
                     </a>
-                </li>
+                </li> -->
                 <li class="nav-item">
                     <a class="nav-link" href="index.php?controller=Turno&action=index" title="Turnos" data-toggle="tooltip" data-placement="right" data-container="body">
                         <span class="icon icon-clock"></span>
@@ -37,37 +37,30 @@
                 </li>
                 <!-- ##################################################################################### -->
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php?controller=Empresa&action=index" title="Clientes" data-toggle="tooltip" data-placement="right" data-container="body">
+                    <a class="nav-link" href="index.php?controller=Empresa&action=index" title="Empresas" data-toggle="tooltip" data-placement="right" data-container="body">
                         <span class="icon icon-briefcase"></span>
-                        <small class="iconav-nav-label d-md-none">Organizaciones</small>
+                        <small class="iconav-nav-label d-md-none">Empresas</small>
                     </a>
                 </li>
                 <!-- ##################################################################################### -->
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php?controller=Sede&action=index" title="Sedes de Clientes" data-toggle="tooltip" data-placement="right" data-container="body">
+                    <a class="nav-link" href="index.php?controller=Sede&action=index" title="Sedes" data-toggle="tooltip" data-placement="right" data-container="body">
                         <span class="icon icon-users"></span>
-                        <small class="iconav-nav-label d-md-none">Dependencias</small>
+                        <small class="iconav-nav-label d-md-none">Sedes</small>
                     </a>
                 </li>
                 <!-- ##################################################################################### -->
                 <li class="nav-item">
-                    <a class="nav-link" href="#" title="Certificados" data-toggle="tooltip" data-placement="right" data-container="body">
+                    <a class="nav-link disabled" href="#" title="Certificados" data-toggle="tooltip" data-placement="right" data-container="body">
                         <span class="icon icon-news"></span>
                         <small class="iconav-nav-label d-md-none">Certificados</small>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" title="Informes" data-toggle="tooltip" data-placement="right" data-container="body">
+                    <a class="nav-link disabled" href="#" title="Informes" data-toggle="tooltip" data-placement="right" data-container="body">
                         <span class="icon icon-clipboard"></span>
                         <small class="iconav-nav-label d-md-none">Informes</small>
                     </a>
                 </li>
-                <!-- ##################################################################################### -->
-                <li class="nav-item">
-                    <a class="nav-link" href="#" title="Signed in as admin" data-toggle="tooltip" data-placement="right" data-container="body">
-                        <small class="iconav-nav-label d-md-none">@admin</small>
-                    </a>
-                </li>
-            </ul>
         </div>
     </nav>

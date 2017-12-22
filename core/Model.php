@@ -22,7 +22,7 @@ class Model{
     {
         $host = "localhost";
         $user = "root";
-        $password = "I8afrri2";
+        $password = "3ndgl0ry";
         $database = "kyfdb";
         $charset = "utf8";
         $opt = [PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC];

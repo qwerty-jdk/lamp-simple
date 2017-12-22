@@ -17,7 +17,7 @@
             <ul class="nav nav-pills iconav-nav flex-md-column">
                 <!-- ##################################################################################### -->
                 <li class="nav-item">
-                    <a class="nav-link active" href="index.php?controller=Persona&action=index" title="Personas" data-toggle="tooltip" data-placement="right" data-container="body">
+                    <a class="nav-link" href="index.php?controller=Persona&action=index" title="Personas" data-toggle="tooltip" data-placement="right" data-container="body">
                         <span class="icon icon-user"></span>
                         <small class="iconav-nav-label d-md-none">Turnos</small>
                     </a>

@@ -1,5 +1,5 @@
 <div class="container">
-    <!--<?php print_r($data['empresas']); ?>-->
+    <!--<?php print_r($data['personas']); ?>-->
     <div class="dashhead">
         <div class="dashhead-titles">
             <h6 class="dashhead-subtitle">Dashboards</h6>

@@ -17,7 +17,7 @@
             <ul class="nav nav-pills iconav-nav flex-md-column">
                 <!-- ##################################################################################### -->
                 <li class="nav-item">
-                    <a class="nav-link active" href="#" title="Personas" data-toggle="tooltip" data-placement="right" data-container="body">
+                    <a class="nav-link active" href="index.php?controller=Persona&action=index" title="Personas" data-toggle="tooltip" data-placement="right" data-container="body">
                         <span class="icon icon-user"></span>
                         <small class="iconav-nav-label d-md-none">Turnos</small>
                     </a>
@@ -30,21 +30,21 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" title="Turnos" data-toggle="tooltip" data-placement="right" data-container="body">
+                    <a class="nav-link" href="index.php?controller=Turno&action=index" title="Turnos" data-toggle="tooltip" data-placement="right" data-container="body">
                         <span class="icon icon-clock"></span>
                         <small class="iconav-nav-label d-md-none">Turnos</small>
                     </a>
                 </li>
                 <!-- ##################################################################################### -->
                 <li class="nav-item">
-                    <a class="nav-link" href="#" title="Clientes" data-toggle="tooltip" data-placement="right" data-container="body">
+                    <a class="nav-link" href="index.php?controller=Empresa&action=index" title="Clientes" data-toggle="tooltip" data-placement="right" data-container="body">
                         <span class="icon icon-briefcase"></span>
                         <small class="iconav-nav-label d-md-none">Organizaciones</small>
                     </a>
                 </li>
                 <!-- ##################################################################################### -->
                 <li class="nav-item">
-                    <a class="nav-link" href="#" title="Sedes de Clientes" data-toggle="tooltip" data-placement="right" data-container="body">
+                    <a class="nav-link" href="index.php?controller=Sede&action=index" title="Sedes de Clientes" data-toggle="tooltip" data-placement="right" data-container="body">
                         <span class="icon icon-users"></span>
                         <small class="iconav-nav-label d-md-none">Dependencias</small>
                     </a>

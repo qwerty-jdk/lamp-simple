@@ -15,14 +15,17 @@ class Sede extends Controller {
     public function index() {
         $EmpresaLoader = new LoadModel("EmpresaModel");
         $SedeLoader = new LoadModel("SedeModel");
+        $TurnoLoader = new LoadModel("TurnoModel");
         $modelEmpresao = new EmpresaModel();
         $modelSede = new SedeModel();
+        $modelTurno = new TurnoModel();
         //Se llama al méthos que traerá todos los datos
         $data = array();
         $data['empresas'] = $modelEmpresao->ReadAll();
         $data['sedes'] = $modelSede->ReadAll();
+        $data['turnos'] = $modelTurno->ReadAll();
         //Se instancia de la vista pasando como parámetro la lista al contenido
-        $View = new Layout("Empresa/index.php", compact("data"));
+        $View = new Layout("Sede/index.php", compact("data"));
     }
 
     public function save(){

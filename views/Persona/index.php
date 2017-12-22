@@ -163,6 +163,15 @@
                             } ?>
                             </select>
                         </div>
+                        <div class="form-group">
+                            <label for="compromiso">Compromisos</label>
+                            <br>
+                            <a href="#compromisos" data-toggle="modal">
+                                <button type="button" class="btn btn-outline-primary">
+                                    <span class="icon icon-circle-with-plus">&nbsp;Compromisos de la persona</span>
+                                </button>
+                            </a>
+                        </div>
                 </div>
                 <div class="modal-actions">
                     <button type="submit" class="btn-link modal-action"><strong>Continuar</strong></button>
@@ -233,6 +242,15 @@
                             } ?>
                             </select>
                         </div>
+                        <div class="form-group">
+                            <label for="compromiso">Compromisos</label>
+                            <br>
+                            <a href="#compromisos" data-toggle="modal">
+                                <button type="button" class="btn btn-outline-primary">
+                                    <span class="icon icon-circle-with-plus">&nbsp;Compromisos de la persona</span>
+                                </button>
+                            </a>
+                        </div>
                 </div>
                 <div class="modal-actions">
                     <button type="submit" class="btn-link modal-action"><strong>Continuar</strong></button>
@@ -252,6 +270,43 @@
                 </div>
                 <div class="modal-body">
                     <p>Está seguro de borrar a la persona</p>
+                </div>
+                <div class="modal-actions">
+                    <button type="submit" class="btn-link modal-action" data-dismiss="modal"><strong>Continuar</strong></button>
+                    <button type="button" class="btn-link modal-action" data-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="compromisos" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Compromisos</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="nombre_compromiso">Nombre del compromiso</label>
+                        <input type="text" class="form-control" name="nombre_compromiso" id="nombre_compromiso" placeholder="Nombre de ejemplo" />
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha_inicio">Fecha de inicio</label>
+                        <input type="date" class="form-control" name="fecha_inicio" id="fecha_inicio" />
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha_fin">Fecha de fin</label>
+                        <input type="date" class="form-control" name="fecha_fin" id="fecha_fin" />
+                    </div>
+                    <div class="form-group">
+                        <label for="sede">Tipo de compromiso</label>
+                        <select class="form-control" name="compromiso" id="compromiso" placeholder="Compromiso" />
+                        <?php for($i = 0; $i < count($sedes); $i++){
+                            echo '<option value='.$sedes[$i]['CODIGO'].'>'.$sedes[$i]['NOMBRE'].'</option>';
+                        } ?>
+                        </select>
+                    </div>
                 </div>
                 <div class="modal-actions">
                     <button type="submit" class="btn-link modal-action" data-dismiss="modal"><strong>Continuar</strong></button>

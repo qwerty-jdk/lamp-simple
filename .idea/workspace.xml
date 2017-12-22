@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6fe74251-9c77-4b6e-8508-7a969ff7fe02" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/Layout/header.php" afterPath="$PROJECT_DIR$/views/Layout/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/Persona/index.php" afterPath="$PROJECT_DIR$/views/Persona/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/Sede/index.php" afterPath="$PROJECT_DIR$/views/Sede/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,6 +35,12 @@
         <item name="" type="eadb38e5:DatabaseStructure$Root" />
         <item name="MariaDB" type="e3449647:DbNodeDescriptor" />
         <item name="kyfdb" type="e3449647:DbNodeDescriptor" />
+        <item name="compromiso" type="e3449647:DbNodeDescriptor" />
+      </path>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="MariaDB" type="e3449647:DbNodeDescriptor" />
+        <item name="kyfdb" type="e3449647:DbNodeDescriptor" />
         <item name="empresa" type="e3449647:DbNodeDescriptor" />
       </path>
       <path>
@@ -55,34 +61,14 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/Sede/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="181" column="30" lean-forward="true" selection-start-line="181" selection-start-column="30" selection-end-line="181" selection-end-column="30" />
-              <folding>
-                <element signature="e#4165#4172#1#HTML" expanded="true" />
-                <element signature="e#7844#7851#1#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/Empresa/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="83" column="35" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/Persona/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="244" column="0" lean-forward="true" selection-start-line="244" selection-start-column="0" selection-end-line="262" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="335">
+              <caret line="281" column="37" lean-forward="false" selection-start-line="281" selection-start-column="37" selection-end-line="281" selection-end-column="37" />
+              <folding>
+                <element signature="e#8268#8274#0#HTML" expanded="true" />
+                <element signature="e#13199#13205#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -141,12 +127,12 @@
         <option value="$PROJECT_DIR$/sql.sql" />
         <option value="$PROJECT_DIR$/core/Model.php" />
         <option value="$PROJECT_DIR$/views/Empresa/index.php" />
-        <option value="$PROJECT_DIR$/views/Persona/index.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/789ed595-dcef-4b69-8fdf-67bca3d51f18/console.sql" />
         <option value="$PROJECT_DIR$/views/Turno/index.php" />
         <option value="$PROJECT_DIR$/core/Config.php" />
         <option value="$PROJECT_DIR$/views/Layout/header.php" />
         <option value="$PROJECT_DIR$/views/Sede/index.php" />
+        <option value="$PROJECT_DIR$/views/Persona/index.php" />
       </list>
     </option>
   </component>
@@ -290,7 +276,7 @@
       <workItem from="1513311948339" duration="8993000" />
       <workItem from="1513358682531" duration="11878000" />
       <workItem from="1513864801795" duration="1687000" />
-      <workItem from="1513917107242" duration="11723000" />
+      <workItem from="1513917107242" duration="14205000" />
     </task>
     <task id="LOCAL-00001" summary="frontend">
       <created>1513968497924</created>
@@ -306,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513969971876</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="frontend - turnos - sedes">
+      <created>1513971617943</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1513971617943</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -324,7 +317,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64652000" />
+    <option name="totallyTimeSpent" value="67134000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -335,7 +328,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1785174" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1785174" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -381,7 +374,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="frontend" />
     <MESSAGE value="frontend - turnos" />
-    <option name="LAST_COMMIT_MESSAGE" value="frontend - turnos" />
+    <MESSAGE value="frontend - turnos - sedes" />
+    <option name="LAST_COMMIT_MESSAGE" value="frontend - turnos - sedes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -634,14 +628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/Persona/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="244" column="0" lean-forward="true" selection-start-line="244" selection-start-column="0" selection-end-line="262" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/EmpresaModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -666,11 +652,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/Sede/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="181" column="30" lean-forward="true" selection-start-line="181" selection-start-column="30" selection-end-line="181" selection-end-column="30" />
+        <state relative-caret-position="3162">
+          <caret line="213" column="30" lean-forward="true" selection-start-line="213" selection-start-column="30" selection-end-line="213" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/Persona/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="281" column="37" lean-forward="false" selection-start-line="281" selection-start-column="37" selection-end-line="281" selection-end-column="37" />
           <folding>
-            <element signature="e#4165#4172#1#HTML" expanded="true" />
-            <element signature="e#7844#7851#1#HTML" expanded="true" />
+            <element signature="e#8268#8274#0#HTML" expanded="true" />
+            <element signature="e#13199#13205#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
